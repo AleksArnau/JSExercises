@@ -1,0 +1,26 @@
+{
+  "name": "JSExercises",
+  "version": "1.0.0",
+  "description": "I use [VS Code](https://code.visualstudio.com/) to edit code, [Prettier](https://prettier.io/) for formatting",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AleksArnau/JSExercises.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AleksArnau/JSExercises/issues"
+  },
+  "homepage": "https://github.com/AleksArnau/JSExercises#readme",
+  "devDependencies": {
+    "jest": "^27.3.1"
+  }
+}
