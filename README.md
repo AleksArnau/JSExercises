@@ -1,29 +1,33 @@
 # JSExercises
 
-Javascript exercises and testbench as I use frameworks like jest for the first time
-I use [VS Code](https://code.visualstudio.com/) to edit code, [Prettier](https://prettier.io/) for formatting
+## This repo is used for Javascript exercises and as a testbench as I learn the language
 
-Index in order of completion:
-easy.js (to be uploaded)
-find the largest number in an array, function findLargest(numbers) {}
-i18n, function shorten(string) {}
-print multiplication tables for 10, function printTable() {}
+<p>I use [VS Code](https://code.visualstudio.com/) to edit code, [Prettier](https://prettier.io/) for formatting</p>
 
-medium.js (to be uploaded)
-determine if a word is a palindrome, function isPalindrome(string) {}
-sum 0 to n with even/odd/all, function sumToN(n, type) {}
-fizzbuzz, function fizzbuzz(start, end) {}
+</p>Index in order of completion:</p>
 
-hard.js (to be uploaded)
-print pyramid, function printPyramid(height) {}
-contains duplicate int, function hasDuplicate(numbers) {}
-find majority element, function findMajority(items) {}
+<ul>
+<li>easy.js<ol>
+<li>find the largest number in an array, <strong>function findLargest(numbers) {}</strong></li>
+<li>i18n, <strong>function shorten(string) {}</strong></li>
+<li>print multiplication tables for 10, <strong>function printTable() {}</strong></li></ol></li>
 
-recursion.js (to be uploaded)
-create a factorial function using iteration and recursion, function factorial(n) {}
-find the nth fibonacci sequence number, fib sequence, function fib(n) {}
-reverse a string using recursion, function reverse(string)
+<li>medium.js (to be uploaded)<ol>
+<li>determine if a word is a palindrome, <strong>function isPalindrome(string) {}</strong></li>
+<li>sum 0 to n with even/odd/all, <strong>function sumToN(n, type) {}</strong></li>
+<li>fizzbuzz, <strong>function fizzbuzz(start, end) {}</strong></li></ol></li>
 
-harder.js (to be done)
-check if anagram, function isAnagram(string1, string2) {}
-sort a list in place, function sort(numbers) {}
+<li>hard.js (to be uploaded)<ol>
+<li>print pyramid, <strong>function printPyramid(height) {}</strong></li>
+<li>contains duplicate int, <strong>function hasDuplicate(numbers) {}</strong></li>
+<li>find majority element, <strong>function findMajority(items) {}</strong></li></ol></li>
+
+<li>recursion.js (to be uploaded)<ol>
+<li>create a factorial function using iteration and recursion, <strong>function factorial(n) {}</strong></li>
+<li>find the nth fibonacci sequence number, fib sequence, <strong>function fib(n) {}</strong></li>
+<li>reverse a string using recursion, <strong>function reverse(string) {}</strong></li></ol></li>
+
+<li>harder.js (to be done)<ol>
+<li>check if anagram, <strong>function isAnagram(string1, string2) {}</strong></li>
+<li>sort a list in place, <strong>function sort(numbers) {}</strong></li></ol></li>
+</ul>
