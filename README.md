@@ -2,7 +2,7 @@
 
 ## This repo is used for Javascript exercises and as a testbench as I learn the language
 
-<p>I use [VS Code](https://code.visualstudio.com/) to edit code, [Prettier](https://prettier.io/) for formatting</p>
+I use [VS Code](https://code.visualstudio.com/) to edit code, [Prettier](https://prettier.io/) for formatting
 
 </p>Index in order of completion:</p>
 
