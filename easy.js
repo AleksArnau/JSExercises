@@ -28,13 +28,13 @@ function bestPractice(array) {
 }
 
 //uncomment this to run test cases for findLargestNumberInArray()
-console.log("Find largest number in array and best practice test cases:");
-for (const { answer, testCase } of testCasesFindLargest) {
-  const result = findLargestNumberInArray(testCase);
-  const best = bestPractice(testCase);
-  console.log(answer === result, answer, result);
-  console.log(answer === best, answer, best);
-}
+// console.log("Find largest number in array and best practice test cases:");
+// for (const { answer, testCase } of testCasesFindLargest) {
+//   const result = findLargestNumberInArray(testCase);
+//   const best = bestPractice(testCase);
+//   console.log(answer === result, answer, result);
+//   console.log(answer === best, answer, best);
+// }
 
 // i18n, function shorten(string) {}
 //empty string, one, two and three characters stay unchanged
@@ -59,11 +59,11 @@ function shortenerString(string) {
 }
 
 //uncomment this to run test cases for shortenerString()
-console.log("String shortener test cases:");
-for (let i = 0; i < testCasesShortenerString.length; i++) {
-  console.log(testCasesShortenerString[i]);
-  console.log(shortenerString(testCasesShortenerString[i]));
-}
+// console.log("String shortener test cases:");
+// for (let i = 0; i < testCasesShortenerString.length; i++) {
+//   console.log(testCasesShortenerString[i]);
+//   console.log(shortenerString(testCasesShortenerString[i]));
+// }
 
 // print multiplication tables for 10 through 10, function printTable() {}
 //tab separated numbers (use \t and \nto format)
@@ -85,5 +85,6 @@ function createMultTable() {
   return tableString;
 }
 
-console.log("Multiplication tables of one through ten");
-console.log(createMultTable());
+// uncomment this
+// console.log("Multiplication tables of one through ten");
+// console.log(createMultTable());
