@@ -5,31 +5,31 @@ import {
   createTimesTable,
 } from "../src/easy";
 
-describe("findLargestNumberInArray", () => {
-  describe.each([
-    { expected: -Infinity, input: [] },
-    { expected: 1, input: [1] },
-    { expected: 2, input: [2, 2, 2, 2] },
-    { expected: 12, input: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12] },
-    { expected: 68, input: [1, 3, 5, 68, 0, -15] },
-    { expected: 321, input: [321, 1, 2, 3] },
-  ])("given $input should return $expected", ({ input, expected }) => {
+describe.each([
+  { expected: -Infinity, input: [] },
+  { expected: 1, input: [1] },
+  { expected: 2, input: [2, 2, 2, 2] },
+  { expected: 12, input: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12] },
+  { expected: 68, input: [1, 3, 5, 68, 0, -15] },
+  { expected: 321, input: [321, 1, 2, 3] },
+])("findLargestNumberInArray", ({ input, expected }) => {
+  test(`given ${input} should return ${expected}`, () => {
     expect(findLargestNumberInArray(input)).toBe(expected);
   });
 });
 
-describe("shortenString", () => {
-  describe.each([
-    { expected: "t2e", input: "true" },
-    { expected: "d5p", input: "desktop" },
-    { expected: "f6n", input: "function" },
-    { expected: "a11y", input: "accessibility" },
-    { expected: "i18n", input: "internationalization" },
-    { expected: "", input: "" },
-    { expected: "a", input: "a" },
-    { expected: "in", input: "in" },
-    { expected: "eat", input: "eat" },
-  ])("given $input should return $expected", ({ input, expected }) => {
+describe.each([
+  { expected: "t2e", input: "true" },
+  { expected: "d5p", input: "desktop" },
+  { expected: "f6n", input: "function" },
+  { expected: "a11y", input: "accessibility" },
+  { expected: "i18n", input: "internationalization" },
+  { expected: "", input: "" },
+  { expected: "a", input: "a" },
+  { expected: "in", input: "in" },
+  { expected: "eat", input: "eat" },
+])("shortenString", ({ input, expected }) => {
+  test(`given ${input} should return ${expected}`, () => {
     expect(shortenString(input)).toBe(expected);
   });
 });
