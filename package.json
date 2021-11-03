@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "I use [VS Code](https://code.visualstudio.com/) to edit code, [Prettier](https://prettier.io/) for formatting",
   "scripts": {
-    "test": "jest",
     "prebuild": "rm -rf build/",
-    "build": "npx babel src -d build"
+    "build": "npx babel src -d build",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
