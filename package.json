@@ -2,10 +2,6 @@
   "name": "js-exercises",
   "version": "1.0.0",
   "description": "I use [VS Code](https://code.visualstudio.com/) to edit code, [Prettier](https://prettier.io/) for formatting",
-  "main": "build/index.js",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
     "test": "jest",
     "prebuild": "rm -rf build/",
