@@ -1,5 +1,5 @@
 function fizzBuzz(start, end) {
-  let fizzBuzz = [];
+  const fizzBuzz = [];
 
   for (let i = start; i < end; i++) {
     if (i % 15 === 0) {
@@ -16,7 +16,7 @@ function fizzBuzz(start, end) {
 }
 
 function hasDuplicate(numbers) {
-  let numberTally = {};
+  const numberTally = {};
 
   for (const number of numbers) {
     if (number in numberTally) {
@@ -33,7 +33,7 @@ function findPlurality(items) {
     return [];
   }
 
-  let itemCounter = {};
+  const itemCounter = {};
 
   for (let i = 0; i < items.length; i++) {
     if (!(items[i] in itemCounter)) {
