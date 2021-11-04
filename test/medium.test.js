@@ -3,13 +3,8 @@ import { isPalindrome, sumToN, makePyramid } from "../src/medium";
 
 describe.each([
   { input: "true", expected: false },
-  { input: "tret", expected: false },
-  { input: "tredt", expected: false },
-  { input: "desktop", expected: false },
-  { input: "function", expected: false },
-  { input: "accessibility", expected: false },
-  { input: "internationalization", expected: false },
   { input: "a", expected: true },
+  { input: "", expected: true },
   { input: "in", expected: false },
   { input: "kek", expected: true },
   { input: "racecar", expected: true },
