@@ -21,9 +21,8 @@ function hasDuplicate(numbers) {
   for (const number of numbers) {
     if (number in numberTally) {
       return true;
-    } else {
-      numberTally[number] = 1;
     }
+    numberTally[number] = 1;
   }
 
   return false;
@@ -31,17 +30,16 @@ function hasDuplicate(numbers) {
 
 function findPlurality(items) {
   if (items.length === 0) {
-    return undefined;
+    return [];
   }
 
   let itemCounter = {};
 
   for (let i = 0; i < items.length; i++) {
-    if (items[i] in itemCounter) {
-      itemCounter[items[i]]++;
-    } else {
-      itemCounter[items[i]] = 1;
+    if (!(items[i] in itemCounter)) {
+      itemCounter[items[i]] = 0;
     }
+    ++itemCounter[items[i]];
   }
 
   let maxCount = 0;
@@ -71,11 +69,10 @@ function findMajority(items) {
   let itemCounter = {};
 
   for (const item of items) {
-    if (item in itemCounter) {
-      itemCounter[item]++;
-    } else {
-      itemCounter[item] = 1;
+    if (!(item in itemCounter)) {
+      itemCounter[item] = 0;
     }
+    itemCounter[item]++;
   }
 
   for (const item in itemCounter) {

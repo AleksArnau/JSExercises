@@ -68,7 +68,7 @@ describe.each([
     expected: ["milk", "egg", "butter", "shea butter"],
   },
   { input: ["milk"], expected: ["milk"] },
-  { input: [], expected: undefined },
+  { input: [], expected: [] },
 ])("findPlurality", ({ input, expected }) => {
   test(`given ${input} should return ${expected}`, () => {
     expect(findPlurality(input)).toStrictEqual(expected);
