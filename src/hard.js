@@ -33,30 +33,25 @@ function findPlurality(items) {
     return [];
   }
 
+  // const itemCounter = items.reduce((obj, item) => {
+  //   obj[item] = (obj[item] || 0) + 1;
+  //   return obj;
+  // }, {});
+
   const itemCounter = {};
 
-  for (let i = 0; i < items.length; i++) {
-    if (!(items[i] in itemCounter)) {
-      itemCounter[items[i]] = 0;
+  for (let item of items) {
+    if (!(item in itemCounter)) {
+      itemCounter[item] = 0;
     }
-    ++itemCounter[items[i]];
+    ++itemCounter[item];
   }
 
-  let maxCount = 0;
+  const maxCount = Math.max(...Object.values(itemCounter));
 
-  for (const item in itemCounter) {
-    maxCount = Math.max(itemCounter[item], maxCount);
-  }
-
-  let pluralityList = [];
-
-  for (const item in itemCounter) {
-    if (itemCounter[item] === maxCount) {
-      pluralityList.push(item);
-    }
-  }
-
-  return pluralityList;
+  return Object.keys(itemCounter).filter(
+    (item) => itemCounter[item] === maxCount
+  );
 }
 
 function findMajority(items) {
@@ -64,7 +59,7 @@ function findMajority(items) {
     return undefined;
   }
 
-  let itemCounter = {};
+  const itemCounter = {};
 
   for (const item of items) {
     if (!(item in itemCounter)) {
