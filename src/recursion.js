@@ -10,16 +10,6 @@
 //iteration method
 //list of objects
 
-const testCases = [
-  { testCase: -1, expected: undefined },
-  { testCase: 0, expected: 1 },
-  { testCase: 1, expected: 1 },
-  { testCase: 2, expected: 2 },
-  { testCase: 3, expected: 6 },
-  { testCase: 5, expected: 120 },
-  { testCase: 10, expected: 3628800 },
-];
-
 function iterationFactorial(n) {
   if (n < 0) {
     return undefined;
@@ -35,8 +25,6 @@ function iterationFactorial(n) {
   }
   return factor;
 }
-
-// console.log(iterationFactorial(5));
 
 //recursion method
 //console.log(`Factorial of 5 : ${5 * 4 * 3 * 2 * 1}`);
