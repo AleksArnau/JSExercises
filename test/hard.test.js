@@ -98,10 +98,10 @@ describe.each([
   },
   {
     input: [],
-    expected: [],
+    expected: undefined,
   },
 ])("findMajority", ({ input, expected }) => {
   test(`given ${input} should return ${expected}`, () => {
-    expect(findMajority(input)).toStrictEqual(expected);
+    expect(findMajority(input)).toBe(expected);
   });
 });
