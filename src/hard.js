@@ -33,11 +33,6 @@ function findPlurality(items) {
     return [];
   }
 
-  // const itemCounter = items.reduce((obj, item) => {
-  //   obj[item] = (obj[item] || 0) + 1;
-  //   return obj;
-  // }, {});
-
   const itemCounter = {};
 
   for (let item of items) {
