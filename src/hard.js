@@ -3,11 +3,15 @@
 // fizzbuzz, function fizzbuzz(start, end) {}
 // 1. print fizz when the number is divisible by 3, buzz for 5, fizzbuzz when divisible by both, if none are true, just print the number
 //changed function to return an Array instead
+//0 is divisible by every number but itself
+
+// // smallest?
+// for(i=0;i<100;)console.log((++i%3?'':'Fizz')+(i%5?'':'Buzz')||i)
 
 function fizzBuzz(start, end) {
   let fizzBuzz = [];
   for (let i = start; i < end; i++) {
-    if (i % 3 === 0 && i % 5 === 0) {
+    if (i % 15 === 0) {
       fizzBuzz.push("fizzbuzz");
     } else if (i % 3 === 0) {
       fizzBuzz.push("fizz");
@@ -19,7 +23,6 @@ function fizzBuzz(start, end) {
   }
   return fizzBuzz;
 }
-
 
 // contains duplicate int, function hasDuplicate(numbers) {}
 // 2. given a list of numbers, return whether duplicates exist
@@ -300,4 +303,4 @@ console.log(objectTest[1]);
 console.log(objectTest);
 */
 
-export { fizzBuzz, findPlurality, findPlurality2, findMajority };
+export { fizzBuzz, hasDuplicate, findPlurality, findPlurality2, findMajority };
