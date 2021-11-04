@@ -10,18 +10,19 @@ Index in order of completion:
 
 - find the largest number in an array
 - internationalization to i18n
-- print multiplication tables for 10
+- return multiplication tables for 10
 
 [medium.js](./src/medium.js)
 
 - determine if a word is a palindrome
 - sum 0 to n with even/odd/all
-- fizzbuzz
+- fizzbuzz of start through end
 
 [hard.js](to be uploaded)
 
-- print pyramid
-- contains duplicate int
+- return pyramid with n heigth
+- check if contains duplicate int
+- find plurality elements
 - find majority element
 
 [recursion.js](to be uploaded)
