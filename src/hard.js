@@ -44,49 +44,7 @@ function hasDuplicate(numbers) {
 //no items is undefined
 //same ammount of most items returns both
 
-let testCases = [
-  ["milk", "egg", "butter", "shea butter", "egg"], // returns ["egg"]
-  ["milk", "egg", "butter", "butter", "shea butter", "egg"], // returns ["egg","butter"]
-  ["milk", "egg", "butter", "shea butter"], //returns ["milk", "egg", "butter", "shea butter"]
-  ["milk"], //returns ["milk"]
-  [], //returns undefined
-];
-//mode of an
-//Plurality is more than half
-//will return ["egg","butter"]
 function findPlurality(items) {
-  //this'll have {egg : 2 , butter : 2, cocoa : 1} at the end
-  let itemObjects = {};
-  //this'll have {1 : ["egg","butter","cocoa"] , 2 : ["egg","butter"]}
-  let itemsCount = {};
-  //should be 2 for prev examples
-  let biggestStack = 0;
-  //multimap bimap bimultimap lookup
-  for (let i = 0; i < items.length; i++) {
-    //we set #times each item's present
-    //ex {butter : 2}
-    if (items[i] in itemObjects) {
-      itemObjects[items[i]]++;
-    } else {
-      itemObjects[items[i]] = 1;
-    }
-    //this should log each number of item per item
-    //e.g {2 : ["egg","butter"]}
-    if (itemObjects[items[i]] in itemsCount) {
-      itemsCount[itemObjects[items[i]]].push(items[i]);
-    } else {
-      itemsCount[itemObjects[items[i]]] = [items[i]];
-    }
-    //we check which is the biggest stack
-    if (biggestStack < itemObjects[items[i]]) {
-      biggestStack = itemObjects[items[i]];
-    }
-  }
-  return itemsCount[biggestStack];
-}
-
-//will return ["egg","butter"]
-function findPlurality2(items) {
   if (items.length === 0) {
     return undefined;
   }
@@ -181,9 +139,9 @@ var majorityElement = function (items) {
   }
   return undefined;
 };
-for (let i = 0; i < testCasesMajority.length; i++) {
-  console.log(majorityElement(testCasesMajority[i]));
-}
+// for (let i = 0; i < testCasesMajority.length; i++) {
+//   console.log(majorityElement(testCasesMajority[i]));
+// }
 
 //O(n)time
 //hard part O(1)space regardless of the amount of X it always takes the same space
@@ -303,4 +261,4 @@ console.log(objectTest[1]);
 console.log(objectTest);
 */
 
-export { fizzBuzz, hasDuplicate, findPlurality, findPlurality2, findMajority };
+export { fizzBuzz, hasDuplicate, findPlurality, findMajority };
