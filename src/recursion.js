@@ -167,10 +167,20 @@ function re2cursedInversedReverseString(string) {
   return re2cursedInversedReverseString(string.substring(1)) + string[0];
 }
 
-for (const { testCase, expected } of testCaseStrings) {
-  console.log(re2cursedInversedReverseString(testCase), expected);
-}
+// for (const { testCase, expected } of testCaseStrings) {
+//   console.log(re2cursedInversedReverseString(testCase), expected);
+// }
 
 // // Hello World!
 // console.log(testCaseStrings[2].testCase.slice(0, 4));
 // console.log(testCaseStrings[2].testCase.substring(1));
+
+export {
+  iterationFactorial,
+  recursionFactorial,
+  iteratedFibonacci,
+  recursedFibonacci,
+  iteratedReverseString,
+  recursedReverseString,
+  re2cursedInversedReverseString,
+};
