@@ -74,3 +74,45 @@ describe.each([
     expect(findPlurality(input)).toStrictEqual(expected);
   });
 });
+
+// let testCasesMajority = [
+//   ["milk", "milk", "milk", "milk", "egg", "egg", "egg", "egg", "egg", "egg"], // returns undefined
+//   ["milk", "egg", "butter", "shea butter", "egg", "egg", "egg"], // returns egg
+//   ["milk", "egg", "butter", "butter", "shea butter", "egg"], // returns undefined
+//   ["milk", "egg", "butter", "shea butter"], //returns undefined
+//   ["milk", "egg"], //returns undefined
+//   ["milk", "milk"], //returns milk
+//   ["milk"], //returns milk
+//   [], //returns undefined
+// ];
+
+describe.each([
+  {
+    input: ["milk", "egg"],
+    expected: undefined,
+  },
+  {
+    input: ["milk", "egg", "butter", "shea butter", "egg", "egg", "egg"],
+    expected: "egg",
+  },
+  {
+    input: ["milk", "egg", "butter", "butter", "shea butter", "egg"],
+    expected: undefined,
+  },
+  {
+    input: ["milk", "milk"],
+    expected: "milk",
+  },
+  {
+    input: ["milk"],
+    expected: "milk",
+  },
+  {
+    input: [],
+    expected: undefined,
+  },
+])("findMajority", ({ input, expected }) => {
+  test(`given ${input} should return ${expected}`, () => {
+    expect(findMajority(input)).toStrictEqual(expected);
+  });
+});
