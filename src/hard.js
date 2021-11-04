@@ -65,7 +65,7 @@ function findPlurality(items) {
 
 function findMajority(items) {
   if (items.length === 0) {
-    return undefined;
+    return [];
   }
 
   let itemCounter = {};

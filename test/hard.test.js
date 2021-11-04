@@ -98,7 +98,7 @@ describe.each([
   },
   {
     input: [],
-    expected: undefined,
+    expected: [],
   },
 ])("findMajority", ({ input, expected }) => {
   test(`given ${input} should return ${expected}`, () => {
