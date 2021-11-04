@@ -18,11 +18,11 @@ function fizzBuzz(start, end) {
 function hasDuplicate(numbers) {
   let numberTally = {};
 
-  for (let number = 0; number < numbers.length; number++) {
-    if (numbers[number] in numberTally) {
+  for (const number of numbers) {
+    if (number in numberTally) {
       return true;
     } else {
-      numberTally[numbers[number]] = 1;
+      numberTally[number] = 1;
     }
   }
 
