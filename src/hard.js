@@ -45,9 +45,7 @@ function findPlurality(items) {
   let maxCount = 0;
 
   for (const item in itemCounter) {
-    if (itemCounter[item] > maxCount) {
-      maxCount = itemCounter[item];
-    }
+    maxCount = Math.max(itemCounter[item], maxCount);
   }
 
   let pluralityList = [];
