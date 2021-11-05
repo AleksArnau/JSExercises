@@ -16,7 +16,7 @@ describe.each([
   { input: 3, expected: 6 },
   { input: 5, expected: 120 },
   { input: 10, expected: 3628800 },
-])("With", ({ input, expected }) => {
+])("", ({ input, expected }) => {
   test(`iteratedFactorial given ${input} should return ${expected}`, () => {
     expect(iteratedFactorial(input)).toBe(expected);
   });
@@ -33,7 +33,7 @@ describe.each([
   { input: 5, expected: 5 },
   { input: 7, expected: 13 },
   { input: 10, expected: 55 },
-])("With", ({ input, expected }) => {
+])("", ({ input, expected }) => {
   test(`iteratedFibonacci given ${input} should return ${expected}`, () => {
     expect(iteratedFibonacci(input)).toBe(expected);
   });
@@ -48,7 +48,7 @@ describe.each([
   { input: "Hello World!", expected: "!dlroW olleH" },
   { input: "This is a string", expected: "gnirts a si sihT" },
   { input: "kayak", expected: "kayak" },
-])("With", ({ input, expected }) => {
+])("", ({ input, expected }) => {
   test(`iteratedReverseString given ${input} should return ${expected}`, () => {
     expect(iteratedReverseString(input)).toBe(expected);
   });
