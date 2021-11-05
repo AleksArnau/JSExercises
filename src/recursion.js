@@ -43,7 +43,7 @@ function iteratedFibonacci(n) {
   return b;
 }
 
-//TODO redo this function using dynamic programming, memoization is also relevant
+// TODO: redo this function using dynamic programming / memoization
 function recursedFibonacci(n) {
   if (n === 0) {
     return 0;
