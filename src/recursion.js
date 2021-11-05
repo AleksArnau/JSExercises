@@ -9,7 +9,7 @@ function iteratedFactorial(n) {
 
   let factor = 1;
 
-  for (let i = n; i > 0; --i) {
+  for (let i = 1; i <= n; ++i) {
     factor *= i;
   }
 
