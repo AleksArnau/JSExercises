@@ -1,12 +1,11 @@
 import { describe, expect, test } from "@jest/globals";
 import {
-  iterationFactorial,
-  recursionFactorial,
+  iteratedFactorial,
+  recursedFactorial,
   iteratedFibonacci,
   recursedFibonacci,
   iteratedReverseString,
   recursedReverseString,
-  re2cursedInversedReverseString,
 } from "../src/recursion";
 
 describe.each([
@@ -18,11 +17,11 @@ describe.each([
   { input: 5, expected: 120 },
   { input: 10, expected: 3628800 },
 ])("With", ({ input, expected }) => {
-  test(`iterationFactorial given ${input} should return ${expected}`, () => {
-    expect(iterationFactorial(input)).toBe(expected);
+  test(`iteratedFactorial given ${input} should return ${expected}`, () => {
+    expect(iteratedFactorial(input)).toBe(expected);
   });
-  test(`recursionFactorial given ${input} should return ${expected}`, () => {
-    expect(recursionFactorial(input)).toBe(expected);
+  test(`recursedFactorial given ${input} should return ${expected}`, () => {
+    expect(recursedFactorial(input)).toBe(expected);
   });
 });
 
@@ -55,8 +54,5 @@ describe.each([
   });
   test(`recursedReverseString given ${input} should return ${expected}`, () => {
     expect(recursedReverseString(input)).toBe(expected);
-  });
-  test(`re2cursedInversedReverseString given ${input} should return ${expected}`, () => {
-    expect(re2cursedInversedReverseString(input)).toBe(expected);
   });
 });
