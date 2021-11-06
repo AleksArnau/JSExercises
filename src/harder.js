@@ -14,34 +14,34 @@
 // we check it agaisnt string2 with the same dissection
 // if the tally of each letter matches we return true
 
+//now we do it with only 1 object, start writing from line 32
+
 function isAnagram(string1, string2) {
   if (string1 === string2 || string1.length != string2.length) {
     return false;
   }
 
-  const anagramTally1 = {};
-  const anagramTally2 = {};
+  const anagramTally = {};
 
-  for (let char of string1) {
-    if (!(char in anagramTally1)) {
-      anagramTally1[char] = 0;
+  for (let letter of string1) {
+    if (!(letter in anagramTally)) {
+      anagramTally[letter] = 0;
     }
-    ++anagramTally1[char];
+    ++anagramTally[letter];
   }
 
-  for (let char of string2) {
-    if (!(char in anagramTally2)) {
-      anagramTally2[char] = 0;
-    }
-    ++anagramTally2[char];
-  }
-
-  
-  for (let letter of Object.keys(anagramTally1)) {
-    if (anagramTally1[letter] != anagramTally2[letter]) {
+  for (let letter of string2) {
+    if (!(letter in anagramTally)) {
       return false;
     }
+    
+    --anagramTally[letter];
+
+    if (anagramTally[letter] === 0) {
+      delete anagramTally[letter];
+    }
   }
+
   return true;
 }
 
