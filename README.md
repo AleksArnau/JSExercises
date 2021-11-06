@@ -18,20 +18,20 @@ Index in order of completion:
 - sum 0 to n with even/odd/all
 - fizzbuzz of start through end
 
-[hard.js](to be uploaded)
+[hard.js](./src/hard.js)
 
 - return pyramid with n heigth
 - check if contains duplicate int
 - find plurality elements
 - find majority element
 
-[recursion.js](to be uploaded)
+[recursion.js](./src/recursion.js)
 
 - create a factorial function using iteration and recursion
 - find the nth fibonacci sequence number using iteration and recursion
 - reverse a string using iteration and recursion
 
-[harder.js](to be done)
+[harder.js](./src/harder.js)
 
 - check if anagram
 - sort a list in place
