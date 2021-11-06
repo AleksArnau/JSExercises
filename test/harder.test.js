@@ -17,3 +17,16 @@ describe.each([
     expect(isAnagram(string1, string2)).toBe(expected);
   });
 });
+
+describe.each([
+  { array: [], expected: [] },
+  { array: [1], expected: [1] },
+  { array: [3, 2, 1], expected: [1, 2, 3] },
+  { array: [1, 2, 3], expected: [1, 2, 3] },
+  { array: [3, 2, 1, 3, 2, 1], expected: [1, 1, 2, 2, 3, 3] },
+  { array: [-1, 4, 0, -3, 1], expected: [-3, -1, 0, 1, 4] },
+])("sort", ({ array, expected }) => {
+  test(`given ${array} should return ${expected}`, () => {
+    expect(sort(array)).toStrictEqual(expected);
+  });
+});

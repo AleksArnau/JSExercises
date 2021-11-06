@@ -4,17 +4,22 @@
 // case insensitive, space sensitive, a word cannot be it's own anagram
 // compare the two string against ea. other /w 1 object
 
-// example with string1="dog" and string2="god"
-// anagramTally takes on string1 >>> { d:1 , o:1 , g:1 }
-// for of should work for a string e.g.
-// for (const c of text) {
-//   console.log(c)
-// }
-// can check back previous exercises for how to implement xTally
-// we check it agaisnt string2 with the same dissection
-// if the tally of each letter matches we return true
+//trick was to add to the tally and then substract
 
-//now we do it with only 1 object, start writing from line 32
+// runtime complexity O(n), space complexity O(n)
+// TODO: benchmark this against a sorting implementation
+
+// function isAnagram(stringA, stringB) {
+//   // Sanitizing
+//   stringA = stringA.toLowerCase().replace(/[\W_]+/g, "");
+//   stringB = stringB.toLowerCase().replace(/[\W_]+/g, "");
+
+//   // sorting
+//   const stringASorted = stringA.split("").sort().join("");
+//   const stringBSorted = stringB.split("").sort().join("");
+
+//   return stringASorted === stringBSorted;
+// }
 
 function isAnagram(string1, string2) {
   if (string1 === string2 || string1.length != string2.length) {
@@ -34,7 +39,7 @@ function isAnagram(string1, string2) {
     if (!(letter in anagramTally)) {
       return false;
     }
-    
+
     --anagramTally[letter];
 
     if (anagramTally[letter] === 0) {
@@ -46,9 +51,22 @@ function isAnagram(string1, string2) {
 }
 
 // sort a list in place, function sort(numbers) {}
+// a.k.a use the same array to sort, returns numbers
+// given array of numbers, sorted in ascending order >>> 1,2,3
+// naive insertion sort
+
 function sort(numbers) {
-  let a = numbers;
-  return "Some string";
+  for (let i = 0; i < numbers.length - 1; i++) {
+    let minIndex = i;
+    for (let j = i + 1; j < numbers.length; j++) {
+      if (numbers[minIndex] > numbers[j]) {
+        minIndex = j;
+      }
+    }
+    [numbers[i], numbers[minIndex]] = [numbers[minIndex], numbers[i]];
+  }
+
+  return numbers;
 }
 
 export { isAnagram, sort };
