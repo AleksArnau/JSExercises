@@ -15,9 +15,34 @@
 // if the tally of each letter matches we return true
 
 function isAnagram(string1, string2) {
-  if (string1 === string2) return false;
+  if (string1 === string2 || string1.length != string2.length) {
+    return false;
+  }
 
-  const anagramTally = {};
+  const anagramTally1 = {};
+  const anagramTally2 = {};
+
+  for (let char of string1) {
+    if (!(char in anagramTally1)) {
+      anagramTally1[char] = 0;
+    }
+    ++anagramTally1[char];
+  }
+
+  for (let char of string2) {
+    if (!(char in anagramTally2)) {
+      anagramTally2[char] = 0;
+    }
+    ++anagramTally2[char];
+  }
+
+  
+  for (let letter of Object.keys(anagramTally1)) {
+    if (anagramTally1[letter] != anagramTally2[letter]) {
+      return false;
+    }
+  }
+  return true;
 }
 
 // sort a list in place, function sort(numbers) {}
