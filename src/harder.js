@@ -1,26 +1,6 @@
-// harder
-
-// check if anagram, function isAnagram(string1, string2) {}
-// case insensitive, space sensitive, a word cannot be it's own anagram
-// compare the two string against ea. other /w 1 object
-
-//trick was to add to the tally and then substract
+// TODO: benchmark isAnagram() against a sorting implementation
 
 // runtime complexity O(n), space complexity O(n)
-// TODO: benchmark this against a sorting implementation
-
-// function isAnagram(stringA, stringB) {
-//   // Sanitizing
-//   stringA = stringA.toLowerCase().replace(/[\W_]+/g, "");
-//   stringB = stringB.toLowerCase().replace(/[\W_]+/g, "");
-
-//   // sorting
-//   const stringASorted = stringA.split("").sort().join("");
-//   const stringBSorted = stringB.split("").sort().join("");
-
-//   return stringASorted === stringBSorted;
-// }
-
 function isAnagram(string1, string2) {
   if (string1 === string2 || string1.length != string2.length) {
     return false;
@@ -32,6 +12,7 @@ function isAnagram(string1, string2) {
     if (!(letter in anagramTally)) {
       anagramTally[letter] = 0;
     }
+
     ++anagramTally[letter];
   }
 
@@ -50,11 +31,7 @@ function isAnagram(string1, string2) {
   return true;
 }
 
-// sort a list in place, function sort(numbers) {}
-// a.k.a use the same array to sort, returns numbers
-// given array of numbers, sorted in ascending order >>> 1,2,3
-// naive insertion sort
-
+// runtime complexity O(n^2), space complexity O(1)
 function sort(numbers) {
   for (let i = 0; i < numbers.length - 1; i++) {
     let minIndex = i;
@@ -63,10 +40,21 @@ function sort(numbers) {
         minIndex = j;
       }
     }
+
     [numbers[i], numbers[minIndex]] = [numbers[minIndex], numbers[i]];
   }
 
   return numbers;
 }
+
+// TODO: look up merge sort and quick sort
+
+// function quickSort(numbers) {
+//   return numbers;
+// }
+
+// function mergeSort(numbers) {
+//   return numbers;
+// }
 
 export { isAnagram, sort };
