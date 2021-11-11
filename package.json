@@ -1,28 +1,32 @@
 {
   "name": "js-exercises",
   "version": "1.0.0",
-  "description": "I use [VS Code](https://code.visualstudio.com/) to edit code, [Prettier](https://prettier.io/) for formatting",
+  "description": "A collection of introductory programming exercises implemented and tested in JavaScript.",
+  "keywords": [],
+  "homepage": "https://github.com/AleksArnau/js-exercises",
+  "bugs": {
+    "url": "https://github.com/AleksArnau/js-exercises/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AleksArnau/js-exercises.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Aleksandar Arnautovic",
+    "email": "Aleksandar96@hotmail.fr",
+    "url": "https://github.com/AleksArnau"
+  },
   "scripts": {
     "prebuild": "rm -rf build/",
     "build": "npx babel src -d build",
     "test": "jest"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AleksArnau/JSExercises.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AleksArnau/JSExercises/issues"
-  },
-  "homepage": "https://github.com/AleksArnau/JSExercises#readme",
   "devDependencies": {
-    "@babel/preset-env": "^7.12.11",
-    "@babel/preset-react": "^7.12.10",
     "@babel/cli": "^7.12.10",
     "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
     "jest": "^27.3.1"
   }
 }
