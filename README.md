@@ -1,37 +1,41 @@
-# JSExercises
+# js-exercises
 
-#### Javascript exercises and testbench as I use frameworks like jest for the first time
+A collection of introductory programming exercises implemented and tested in JavaScript.
 
-I use [VS Code](https://code.visualstudio.com/) to edit code, [Prettier](https://prettier.io/) for formatting
-
-Index in order of completion:
+## Exercises
 
 [easy.js](./src/easy.js)
 
-- find the largest number in an array
-- internationalization to i18n
-- return multiplication tables for 10
+- Find the largest number in an array
+- Convert internationalization to i18n
+- Return multiplication tables for 10 as a string
 
 [medium.js](./src/medium.js)
 
-- determine if a word is a palindrome
-- sum 0 to n with even/odd/all
-- fizzbuzz of start through end
+- Determine if a word is a palindrome
+- Sum of 0 to n for even/odd/all
+- Return pyramid string with n height
 
-[hard.js](to be uploaded)
+[hard.js](./src/hard.js)
 
-- return pyramid with n heigth
-- check if contains duplicate int
-- find plurality elements
-- find majority element
+- Fizzbuzz with a start and end
+- Check if array contains duplicate int
+- Find the plurality elements from a list
+- Find the majority element from a list
 
-[recursion.js](to be uploaded)
+[recursion.js](./src/recursion.js)
 
-- create a factorial function using iteration and recursion
-- find the nth fibonacci sequence number using iteration and recursion
-- reverse a string using iteration and recursion
+- Calculate a factorial using iteration and recursion
+- Find the nth Fibonacci sequence number using iteration and recursion
+- Reverse a string using iteration and recursion
 
-[harder.js](to be done)
+[harder.js](./src/harder.js)
 
-- check if anagram
-- sort a list in place
+- Check if a word is an anagram
+- Sort a list in place
+
+## Todos
+
+- [Redo Fibonacci using dynamic programming / memoization](https://github.com/AleksArnau/js-exercises/blob/main/src/recursion.js#L46)
+- [Benchmark isAnagram() against a sorting implementation](https://github.com/AleksArnau/js-exercises/blob/main/src/harder.js#L1)
+- [Look up merge sort and quick sort](https://github.com/AleksArnau/js-exercises/blob/main/src/harder.js#L50)
